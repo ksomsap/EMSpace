@@ -25,7 +25,11 @@ export default function StructuredData() {
     },
     "knowsAbout": [
       "Artificial Intelligence",
-      "Machine Learning",
+      "Machine Learning", 
+      "AI Story Analysis",
+      "Image Generation",
+      "Video Creation",
+      "Voice Synthesis",
       "Web3 Development",
       "Solana Blockchain",
       "Game Development",

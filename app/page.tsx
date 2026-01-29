@@ -8,9 +8,9 @@ export default function Home() {
   const aiProjects = [
     {
       title: "Aowser.com",
-      description: "Generate amazing images with AI and create videos from them. Full-stack AI platform with GPU-based inference, API access, and user management.",
+      description: "AI-powered storytelling platform that takes text prompts, analyzes stories with AI, generates corresponding images, and combines them into short videos with voice narrations for immersive storytelling experiences.",
       status: "live" as const,
-      technologies: ["AI/ML", "GPU Computing", "API Development"],
+      technologies: ["AI/ML", "Story Analysis", "Image Generation", "Video Creation", "Voice Synthesis"],
       link: "https://aowser.com",
       category: "ai" as const,
       image: "/AI/aowser.jpg"
