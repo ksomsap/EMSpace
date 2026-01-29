@@ -27,7 +27,7 @@ export default function Home() {
   ];
 
   const web3Projects = [
-    {
+   /* {
       title: "Claimsol.fun",
       description: "Reclaim SOL locked in empty token accounts. Fast, secure, and safe for all Solana wallets. Helping users recover their locked assets efficiently.",
       status: "live" as const,
@@ -35,7 +35,7 @@ export default function Home() {
       link: "https://claimsol.fun",
       category: "web3" as const,
       image: "/Web3/claimsol.jpg"
-    },
+    },*/
     {
       title: "Emtopier",
       description: "Solana token creator platform. Simplifying the process of creating and deploying tokens on the Solana blockchain with user-friendly interface.",
