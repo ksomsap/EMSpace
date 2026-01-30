@@ -7,6 +7,7 @@ interface ProjectCardProps {
   category: 'ai' | 'web3' | 'game' | 'course';
   image?: string;
   imagePlaceholder?: string;
+  disabled?: boolean;
 }
 
 export default function ProjectCard({ 
@@ -17,7 +18,8 @@ export default function ProjectCard({
   link, 
   category,
   image,
-  imagePlaceholder = "Project Image"
+  imagePlaceholder = "Project Image",
+  disabled = false
 }: ProjectCardProps) {
   const statusColors = {
     live: 'bg-green-900/50 text-green-300 border-green-700',
@@ -84,17 +86,24 @@ export default function ProjectCard({
           ))}
         </div>
         
-        <a 
-          href={link} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors font-medium"
-        >
-          {category === 'course' ? 'View Course' : category === 'game' ? 'Play Game' : 'Visit Platform'}
-          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-        </a>
+        {disabled ? (
+          <span className="inline-flex items-center text-slate-500 font-medium cursor-not-allowed">
+            {category === 'course' ? 'View Course' : category === 'game' ? 'Play Game' : 'Visit Platform'}
+            {/*<span className="ml-2 text-xs">(Coming Soon)</span>*/}
+          </span>
+        ) : (
+          <a 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors font-medium"
+          >
+            {category === 'course' ? 'View Course' : category === 'game' ? 'Play Game' : 'Visit Platform'}
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        )}
       </div>
     </div>
   );

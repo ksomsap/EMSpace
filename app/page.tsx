@@ -43,13 +43,14 @@ export default function Home() {
       technologies: ["Solana", "Token Creation", "Blockchain"],
       link: "https://sol-created.vercel.app/",
       category: "web3" as const,
-      image: "/Web3/emtopier.jpg"
+      image: "/Web3/emtopier.jpg",
+      disabled: true
     }
   ];
 
   const gameProjects = [
     {
-      title: "Sword Do",
+      title: "Sword Dos",
       description: "Action-packed sword fighting game with engaging gameplay mechanics.",
       status: "completed" as const,
       technologies: ["Unity", "C#", "Game Design"],
@@ -58,7 +59,7 @@ export default function Home() {
       image: "/Games/SwordDos.png"
     },
     {
-      title: "Detective Do",
+      title: "Detective Dos",
       description: "Mystery solving game with detective elements and puzzle mechanics.",
       status: "completed" as const,
       technologies: ["Unity", "Puzzle Design", "Storytelling"],
