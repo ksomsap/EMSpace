@@ -175,6 +175,7 @@ export default function Home() {
                 <a 
                   href="https://github.com/ksomsap" 
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="border-2 border-slate-600 text-slate-300 px-8 py-4 rounded-lg font-semibold hover:bg-slate-800 hover:border-slate-500 transition-all"
                 >
                   GitHub Profile
@@ -213,13 +214,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Games Projects */}
+          {/* Games Projects 
           <div className="mb-16">
             <h3 className="text-3xl font-semibold mb-8 text-pink-400">🎮 Game Development</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {gameProjects.map((project, index) => (
                 <div key={index} className="bg-slate-800 rounded-xl border border-slate-700 hover:border-pink-400 transition-all project-card overflow-hidden shadow-sm">
-                  {/* Game Image */}
                   <div className="w-full h-56 overflow-hidden">
                     <img 
                       src={project.image} 
@@ -246,7 +246,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-
+*/}
           {/* Udemy Courses */}
           <div>
             <h3 className="text-3xl font-semibold mb-8 text-green-400">📚 Udemy Courses</h3>
@@ -369,6 +369,7 @@ export default function Home() {
             <a 
               href="https://github.com/ksomsap" 
               target="_blank"
+              rel="noopener noreferrer"
               className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-3 rounded-lg transition-all border border-gray-300 hover:border-gray-400"
             >
               GitHub Profile
